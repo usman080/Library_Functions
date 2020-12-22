@@ -60,7 +60,7 @@ int main()
 
 ------
 
-## NULL & nullptr 
+## Get Known to the NULL & nullptr 
 
 As many of the programmers are coming from C, it's important to know the useful features of C++.
 
