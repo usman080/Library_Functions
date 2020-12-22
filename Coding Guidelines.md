@@ -60,13 +60,13 @@ int main()
 
 ------
 
-## Get Known to the NULL & nullptr 
+## Get Known to the NULL & nullptr :  
 
 As many of the programmers are coming from C, it's important to know the useful features of C++.
 
 The most important thing, I would like to talk is about NULL vs nullptr :
 
-#### So first lets talk about **NULL**:
+#### So first lets talk about **NULL** :
 
 The [`NULL` macro](http://en.cppreference.com/w/cpp/types/NULL) is an implementation defined constant representing a null pointer, usually the integer `0` in C, the `NULL` macro can have type `void *`. However, in C++ this definition is invalid, as there is no implicit cast from a `void *` type to any other pointer type (which C allows).
 
@@ -74,7 +74,7 @@ Since C++11, `NULL` can be either an integer literal with value zero, or a prval
 
 Therefore ambiguity is created and that's why we are going have an look at `nullptr`.
 
-#### Now Talking about **nullptr**:
+#### Now Talking about **nullptr** :
 
 The [`nullptr`](http://en.cppreference.com/w/cpp/language/nullptr) is a new keyword introduced in C++11. `nullptr` is meant as a replacement to `NULL`. `nullptr` provides a typesafe pointer value representing an empty (null) pointer.
 
@@ -94,7 +94,7 @@ Interestingly, this code produces the same results. [Quoting from cppreference](
 
 If functionally they are the same for pointer assignments, what’s so important about distinguishing the two?
 
-#### Types & Function Overloading
+#### Types & Function Overloading : 
 
 Recall our emphasis on `NULL` (`0`) being defined as an `int` literal value. C++ supports better type checking and function overloading, so the type distinction is important.
 
@@ -107,7 +107,7 @@ int f(int * p);
 
 If you invoke `f(NULL)`, you will enter the `f(int)` function rather than the `f(int *)` function like you intended. The solution to such problems is to use `f(nullptr)`instead.
 
-#### Templating
+#### Templating : 
 
 Another benefit of using `nullptr` is that you can specialize some of your templates for `nullptr` cases.
 
@@ -121,7 +121,7 @@ void foo(std::nullptr_t); //specialized overload for nullptr value
 
 
 
-##  Error solving 'nullptr' was not declared in this scope:
+##  Error solving 'nullptr' was not declared in this scope :
 
 
 
