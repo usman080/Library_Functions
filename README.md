@@ -280,7 +280,7 @@ Merging is more simpler and you don't have to even worry about the size of array
 
 And it gets even Magical when you just use += (Assignment Operator) 😉
 
-```
+```c++
 void main()
 {
     Array<int> X(10);
