@@ -147,15 +147,15 @@ If you're using **Code::Blocks** :
 
  Follow the below screenshots: 
 
-![](Coding Guidelines.assets/step-1.png)
+![](https://github.com/Sonic-India/Library_Functions/blob/main/Coding%20Guidelines.assets/step-1.png)
 
 
 
-![](Coding Guidelines.assets/step-2.png)
+![](https://github.com/Sonic-India/Library_Functions/blob/main/Coding%20Guidelines.assets/step-2.png)
 
 
 
-![](Coding Guidelines.assets/step-4.png)
+![](https://github.com/Sonic-India/Library_Functions/blob/main/Coding%20Guidelines.assets/step-4.png)
 
 ------
 
