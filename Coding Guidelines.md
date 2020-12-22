@@ -1,10 +1,10 @@
-## Coding Guidelines:
+# Coding Guidelines:
 
 ------
 
 
 
-### Do Not Define Overloading Operator Outside the Class :
+## Do Not Define Overloading Operator Outside the Class :
 
 
 
@@ -60,7 +60,7 @@ int main()
 
 ------
 
-### NULL & nullptr 
+## NULL & nullptr 
 
 As many of the programmers are coming from C, it's important to know the useful features of C++.
 
@@ -78,7 +78,7 @@ Therefore ambiguity is created and that's why we are going have an look at `null
 
 The [`nullptr`](http://en.cppreference.com/w/cpp/language/nullptr) is a new keyword introduced in C++11. `nullptr` is meant as a replacement to `NULL`. `nullptr` provides a typesafe pointer value representing an empty (null) pointer.
 
-### `NULL` vs `nullptr` :
+#### `NULL` vs `nullptr` :
 
 Let’s consider the following initialization statements:
 
@@ -94,7 +94,7 @@ Interestingly, this code produces the same results. [Quoting from cppreference](
 
 If functionally they are the same for pointer assignments, what’s so important about distinguishing the two?
 
-### Types & Function Overloading
+#### Types & Function Overloading
 
 Recall our emphasis on `NULL` (`0`) being defined as an `int` literal value. C++ supports better type checking and function overloading, so the type distinction is important.
 
@@ -107,7 +107,7 @@ int f(int * p);
 
 If you invoke `f(NULL)`, you will enter the `f(int)` function rather than the `f(int *)` function like you intended. The solution to such problems is to use `f(nullptr)`instead.
 
-### Templating
+#### Templating
 
 Another benefit of using `nullptr` is that you can specialize some of your templates for `nullptr` cases.
 
@@ -121,7 +121,7 @@ void foo(std::nullptr_t); //specialized overload for nullptr value
 
 
 
-###  Error solving 'nullptr' was not declared in this scope:
+##  Error solving 'nullptr' was not declared in this scope:
 
 
 
