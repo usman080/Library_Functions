@@ -1,7 +1,7 @@
 
 
 template <class T>
-Array<T>::Print()
+void Array<T>::Print()
     {
         validate();
         cout<<endl;

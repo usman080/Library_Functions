@@ -46,61 +46,35 @@ class Array
     public:
     
     T *self = nullptr; //if your compiler gives error : ‘nullptr’ was not declared in this scopedd, Visit Code Guidlines Provided at Repository
-    unsigned long long int size;
+    unsigned long long int size = 0;
 
     //Constructors
     Array();
-    Array(unsigned long long int s); 
+    Array(unsigned long long int s);
+
+    //Destructor
+    ~Array();
 
     //Functions 
-    Create(unsigned long long int s);
+    void Create(unsigned long long int s);
+    void Destroy();
+    void Clean();
 
-    Sort();
-    Sort_Ascend();
-    Sort_Descend();
+    void Sort();
+    void Sort_Ascend();
+    void Sort_Descend();
 
-    Print();
+    void Print();
 
-    Resize(unsigned long long int re_size);
+    void Resize(unsigned long long int re_size);
 
-    validate();
+    void validate();
 
     //Operator Overloading
     /*
      
     */
-    T &operator[](int i)
-    {
-        if( (i<0) || (i >= size) )
-        {
-            cout<<endl<<"Error: Array out of bound";
-            exit(1);
-        }
-        return self[i];
-    }
-
-    T &operator += (Array y)
-    {
-       T *temp;
-       int i,j=0;
-       unsigned long long int total_size = size + y.size;
-       temp = new (nothrow) T [total_size];
-       for(i=0;i<size;i++)
-       {
-           temp[i] = self[i];
-       }
-       for(i=size;i<total_size;i++)
-       {
-           temp[i] = y[j];
-           j++;
-       }
-       delete [] self;
-       self = new (nothrow) T [total_size];
-       for(i=0;i<total_size;i++)
-       {
-           self[i] = temp[i];
-       }
-       size = total_size;
-       delete [] temp;
-    }
+    T &operator[](int i);
+    void operator = (Array &Y);
+    void operator += (Array &Y);
 };
