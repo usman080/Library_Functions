@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions.h
+LibraryFunctions/Array/Array.h
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Array.h
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Array.h
+Core_Array.h
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Core_Array.h
+Dynamics/dynamics_array.cpp
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Dynamics/dynamics_array.cpp
+Prints/prints_array.cpp
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Prints/prints_array.cpp
+Sorts/sort_array.cpp
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Sorts/sort_array.cpp
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Core_Array.h
+iostream
+-
+stdlib.h
+-
+bits/stdc++.h
+-
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Dynamics/dynamics_array.cpp
+iostream
+-
+stdlib.h
+-
+bits/stdc++.h
+-
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Prints/prints_array.cpp
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Sorts/sort_array.cpp
+
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/test.cpp
+LibraryFunctions.h
+C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions.h
+
