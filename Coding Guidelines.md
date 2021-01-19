@@ -4,62 +4,6 @@
 
 
 
-## Do Not Define Overloading Operator Outside the Class :
-
-
-
-> #### Note:
->
-> ⚠ **Please, Define the Overloading Operator within the Class.**
-
-*It's not an issue for defining it outside of Class, but here at "Library Functions" we prefer having definition of Overloading Operator Inside the Class itself.*
-
-Eg:
-
-```c++
-#include<iostream>
-
-using namspace std;
-template <class T>
-class Array
-{
-    T *self;
-    unsigned long long int size;
-    Print();
-    
-    //Constructors 
-    Array(unsigned long long int s )
-    {
-        
-    }
-    
-    //Overloading Operator : 
-    T &operator[](int i)
-    {
-        if( (i<0) || (i >= size) )
-        {
-            cout<<endl<<"Error: Array out of bound";
-            exit(1);
-        }
-        return self[i];
-    }
-}
-
-template <class T>
-Array<T>::Print()
-{
-    int i;
-}
-int main()
-{
-    
-}
-```
-
-
-
-------
-
 ## Get Known to the NULL & nullptr :  
 
 As many of the programmers are coming from C, it's important to know the useful features of C++.
