@@ -257,7 +257,7 @@ Well Copying Array is now no more loops,
 
 We Know You Smiled 😊;
 
-*You can Copy Objects of the Class Array with jusr = Assignment  Operator*
+*You can Copy Objects of the Class Array with just = Assignment  Operator*
 
 
 
