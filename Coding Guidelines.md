@@ -34,35 +34,6 @@ int* z = 0;
 
 Interestingly, this code produces the same results. [Quoting from cppreference](http://en.cppreference.com/w/cpp/language/nullptr):
 
-> A null pointer constant may be implicitly converted to any pointer type; such conversion results in the null pointer value of that type. If a null pointer constant has integer type, it may be converted to a `prvalue` of type `std::nullptr_t`.
-
-If functionally they are the same for pointer assignments, what’s so important about distinguishing the two?
-
-#### Types & Function Overloading : 
-
-Recall our emphasis on `NULL` (`0`) being defined as an `int` literal value. C++ supports better type checking and function overloading, so the type distinction is important.
-
-The example case below is not a common use case, but it demonstrates the dangers of `NULL` being defined as an `int`. Consider the following two overloaded function prototypes for `f`:
-
-```c++
-int f(int x);
-int f(int * p);
-```
-
-If you invoke `f(NULL)`, you will enter the `f(int)` function rather than the `f(int *)` function like you intended. The solution to such problems is to use `f(nullptr)`instead.
-
-#### Templating : 
-
-Another benefit of using `nullptr` is that you can specialize some of your templates for `nullptr` cases.
-
-Since the type of `nullptr` is `std::nullptr_t`, you can do something like this to handle `nullptr` as a specific case:
-
-```c++
-template<typename T>
-void foo(T * p); // template based on non-nullptr types
-void foo(std::nullptr_t); //specialized overload for nullptr value
-```
-
 
 
 ##  Error solving 'nullptr' was not declared in this scope :
