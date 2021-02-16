@@ -45,11 +45,11 @@ void Array<T>::Create(unsigned long long int s)
     }
 }
 
-template <class T>
-void Array<T>::Destroy()
-{
-    Array::~Array();
-}
+// template <class T>
+// void Array<T>::Destroy()
+// {
+//     Array::~Array();
+// }
 
 template <class T>
 void Array<T>::Clean()

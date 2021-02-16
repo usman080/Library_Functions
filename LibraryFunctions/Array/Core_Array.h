@@ -57,7 +57,7 @@ class Array
 
     //Functions 
     void Create(unsigned long long int s);
-    void Destroy();
+    // void Destroy();
     void Clean();
 
     void Sort();
