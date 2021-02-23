@@ -7,5 +7,9 @@ CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Array/Core_Ar
 CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Array/Dynamics/dynamics_array.cpp
 CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Array/Prints/prints_array.cpp
 CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Array/Sorts/sort_array.cpp
+CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Clock/Clock.h
+CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Clock/stopwatch.cpp
+CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Clock/stopwatch.hpp
+CMakeFiles/Library_Functions.dir/test.cpp.obj: ../LibraryFunctions/Clock/timer_config.hpp
 CMakeFiles/Library_Functions.dir/test.cpp.obj: ../test.cpp
 

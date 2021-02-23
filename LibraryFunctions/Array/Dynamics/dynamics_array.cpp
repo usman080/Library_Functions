@@ -8,7 +8,7 @@ template <class T>
     Array<T>::Array(){ }
 
 template <class T>
-    Array<T>::Array(unsigned long long int s)
+    Array<T>::Array(size_t s)
     {
         Create(s);
     }
@@ -18,7 +18,7 @@ template<class T>
 
 //Functions///////////////
 template <class T>
-void Array<T>::Create(unsigned long long int s)
+void Array<T>::Create(size_t s)
 {
 
     if(self == nullptr)//if your compiler gives error :‘nullptr’ was not declared in this scope, Visit Code Guidlines Provided at Repository
@@ -39,7 +39,7 @@ void Array<T>::Create(unsigned long long int s)
        cout << endl
              << " The Array has already been Created." << endl
              << " If You Want to Resize The Array,"<<endl
-             << " You Can Use the Command .Resize(unsigned long long int size_that_have_to_be_resized)" << endl<<endl
+             << " You Can Use the Command .Resize(size_t size_that_have_to_be_resized)" << endl<<endl
              << " Eg : X.Resize(100);"<<endl;
         cout<<endl<<"======================================================="<<endl;
     }
@@ -60,9 +60,26 @@ void Array<T>::Clean()
     size = 0;
 }
 
+template <class T>
+void Array<T>::delete_current_shift_left(size_t location)
+{
+    T *temp;
+    size_t new_size = size - 1;
+    temp = new T [new_size];
+    for (int i;i<location;i++)
+        temp[i] = self[i];
+    for(int i=location, j=location + 1; i<new_size; i++,j++)
+        temp[i] = self[j];
+    delete [] self;
+    self = new T[new_size];
+    size = new_size;
+    for(int i=0;i<size;i++)
+        self[i] = temp[i];
+    delete [] temp;
+}
 
 template <class T>
-void Array<T>::Resize(unsigned long long int re_size)
+void Array<T>::Resize(size_t re_size)
 {
     validate();
     T *temp = new T [size];
@@ -84,7 +101,7 @@ template <class T>
     {
         if(self == nullptr)
         {
-            cout<<endl<<" The Array has not been Created."<<endl<<" Use .Create(unsigned long long int size);"<<endl<< " Eg: X.Create(100)"<<endl;
+            cout<<endl<<" The Array has not been Created."<<endl<<" Use .Create(size_t size);"<<endl<< " Eg: X.Create(100)"<<endl;
             exit(403);
         }
     }
@@ -117,7 +134,7 @@ void Array<T>::operator += (Array &Y)
 {
     T *temp;
     int i,j=0;
-    unsigned long long int total_size = size + Y.size;
+    size_t total_size = size + Y.size;
     temp = new (nothrow) T [total_size];
     for(i=0;i<size;i++)
     {

@@ -46,17 +46,17 @@ class Array
     public:
     
     T *self = nullptr; //if your compiler gives error : ‘nullptr’ was not declared in this scopedd, Visit Code Guidlines Provided at Repository
-    unsigned long long int size = 0;
+    size_t size = 0;
 
     //Constructors
     Array();
-    Array(unsigned long long int s);
+    Array(size_t s);
 
     //Destructor
     ~Array();
 
     //Functions 
-    void Create(unsigned long long int s);
+    void Create(size_t s);
     // void Destroy();
     void Clean();
 
@@ -66,10 +66,11 @@ class Array
 
     void Print();
 
-    void Resize(unsigned long long int re_size);
+    void Resize(size_t re_size);
 
     void validate();
 
+    void delete_current_shift_left(size_t location);
     //Operator Overloading
     /*
      

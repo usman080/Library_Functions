@@ -6,21 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions.h
 LibraryFunctions/Array/Array.h
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Array.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Array.h
+LibraryFunctions/Clock/Clock.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/Clock.h
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Array.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Array.h
 Core_Array.h
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Core_Array.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Core_Array.h
 Dynamics/dynamics_array.cpp
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Dynamics/dynamics_array.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Dynamics/dynamics_array.cpp
 Prints/prints_array.cpp
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Prints/prints_array.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Prints/prints_array.cpp
 Sorts/sort_array.cpp
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Sorts/sort_array.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Sorts/sort_array.cpp
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Core_Array.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Core_Array.h
 iostream
 -
 stdlib.h
@@ -28,7 +30,7 @@ stdlib.h
 bits/stdc++.h
 -
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Dynamics/dynamics_array.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Dynamics/dynamics_array.cpp
 iostream
 -
 stdlib.h
@@ -36,11 +38,35 @@ stdlib.h
 bits/stdc++.h
 -
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Prints/prints_array.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Prints/prints_array.cpp
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions/Array/Sorts/sort_array.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Array/Sorts/sort_array.cpp
 
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/test.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/Clock.h
+stopwatch.hpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/stopwatch.hpp
+stopwatch.cpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/stopwatch.cpp
+
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/stopwatch.cpp
+stopwatch.hpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/stopwatch.hpp
+cassert
+-
+sys/time.h
+-
+
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/stopwatch.hpp
+timer_config.hpp
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/timer_config.hpp
+iostream
+-
+stdint.h
+-
+
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions/Clock/timer_config.hpp
+
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/test.cpp
 LibraryFunctions.h
-C:/Users/Onkar Ingale/CLionProjects/Library_Functions/LibraryFunctions.h
+C:/Users/Onkar Ingale/Desktop/Library Functions/Library_Functions/LibraryFunctions.h
 
