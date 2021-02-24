@@ -13,6 +13,6 @@ int main()
     X.Print();
     X.delete_current_shift_left(1);
     X.Print();
-
+    X.Clean();
     return 1;
 }
