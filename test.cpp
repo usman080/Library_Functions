@@ -11,7 +11,6 @@ int main()
     X[1] = 2;
     X[2] = 3;
     X.Print();
-    X.delete_current_shift_left(1);
     X.Print();
     X.Clean();
     return 1;
