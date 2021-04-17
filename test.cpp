@@ -1,17 +1,31 @@
-//
-// Created by Onkar Ingale on 24-12-2020.
-//
 #include "LibraryFunctions.h"
+
+class Test
+{
+    public:
+    int x;
+};
 
 int main()
 {
-    Array<int> X(3);
-    Array<int> Y(3);
-    X[0] = 1;
-    X[1] = 2;
-    X[2] = 3;
-    X.Print();
-    X.Print();
-    X.Clean();
+    LinkedList<Test> A;
+    Array<Test> X(10);  // Array of size 10
+
+    // Filling the Array from 0 to 10
+    for (int i = 0; i < X.size; i++)
+    {
+        X[i].x = i;
+    }
+
+    A = X;  // Copied the Array to LinkedList
+    while (A.current != A.end)  
+    {
+        A.Traverse_Next();  // Traversing Next Node
+        if( (*A.Current_Data).x == 5 )
+            (*A.Current_Data).x = 100;
+        cout<<"\n Data :"<< (*A.Current_Data).x; // Current_Data holds the address of current node.
+    }
+    
+    
     return 1;
 }

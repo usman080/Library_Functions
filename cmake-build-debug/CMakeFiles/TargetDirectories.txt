@@ -1,3 +1,0 @@
-C:/Users/Ashrita/CLionProjects/Library_Functions/cmake-build-debug/CMakeFiles/Library_Functions.dir
-C:/Users/Ashrita/CLionProjects/Library_Functions/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ashrita/CLionProjects/Library_Functions/cmake-build-debug/CMakeFiles/rebuild_cache.dir
