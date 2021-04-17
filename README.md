@@ -351,9 +351,14 @@ void main()
 
 
 
-#### Insertion:
+#### Insertion : 
 
+Insert_end() 
+Insert_At_Mid()
 
+```cpp
+
+```
 
 
 
