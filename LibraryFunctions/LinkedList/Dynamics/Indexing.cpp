@@ -9,6 +9,7 @@ void LinkedList<T>::Update_index_after_inserting(LinkedList::Node *temp)
         temp->index = temp->index + 1;
         temp = temp->next;
     }
+    current = nullptr;
 }
 
 template < class T>
@@ -19,4 +20,5 @@ void LinkedList<T>::Update_index_after_deleting(LinkedList::Node *temp)
         temp->index = temp->index - 1;
         temp = temp->next;
     }
+    current = nullptr;
 }
