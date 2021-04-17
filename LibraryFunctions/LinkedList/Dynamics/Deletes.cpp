@@ -79,5 +79,6 @@ void LinkedList<T>::Delete_end()
         end = end->prev;
         end->next = nullptr;
         free(temp);
+        current = nullptr;
     }
 }
