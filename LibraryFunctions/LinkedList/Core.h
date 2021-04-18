@@ -4,7 +4,8 @@ template < class T>
 class LinkedList
 {
 public:
-    class Node
+    friend class Node;
+   class Node
     {
     public:
         size_t index;
@@ -30,7 +31,7 @@ public:
     void Traverse_from_start();
     void Traverse_from_end();
 
-    void Traverse_Next();   
+    void Traverse_Next();
     void Traverse_Prev();
 
     void Update_index_after_inserting(Node *temp);
