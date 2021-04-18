@@ -10,6 +10,15 @@ void LinkedList<T>::Delete_start()
         exit(501);
 
     }
+    else if(start == end)
+    {
+        Node *temp;
+        temp = end;
+        start = nullptr;
+        end = nullptr;
+        current = nullptr;
+        free(temp);
+    }
     else
     {
         Node * newp;
@@ -71,6 +80,15 @@ void LinkedList<T>::Delete_end()
         std::cout << "\n Linked List Not Initiated \n";
         exit(501);
 
+    }
+    else if(start == end)
+    {
+        Node *temp;
+        temp = end;
+        start = nullptr;
+        end = nullptr;
+        current = nullptr;
+        free(temp);
     }
     else
     {
