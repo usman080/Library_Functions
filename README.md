@@ -351,13 +351,58 @@ void main()
 
 
 
-#### Insertion : 
+#### Insertion :
 
-Insert_end() 
-Insert_At_Mid()
+Well inserting an elment in linked list require lots of coding and frustrating to manage nodes.
+
+So now  you can do it by just calling  function ....
+
+Insert_start(T object)       :Inserting element at the start of linked list and takes element as parameter.
+Insert_end(T object)         :Inserting element at the end of linked list and takes element as parameter.
+Insert_at_index(T object,size_t Position) :Inserting element at the specific position in linked list index start from '0' and takes element ,index/position as parameters.
+
+eg:
 
 ```cpp
+void main()
+{
+    LinkedList<int> X;
+    int i = 20;
+    X.Insert_start(10);//Inserting 10 at start/0th index
+    X.Insert_end(i);//Inserting value of i at the end of linked list /1th index
+    X.Insert_at_index(30,1);//Inserting 30 at 1th index
+        .........your code...........
+}
+```
 
+
+
+
+
+#### Deletion :
+
+As you know for deleting a element requires chunk of code and So here we make deleting as easy as inserting . so you  can focus  on your work not in the deleting of element.
+Here we go......
+ Delete_start();                                 :  It is used to delete the starting element by just calling it and also  not require any parameter.
+Delete_end();                                    : It is used to delete the last element of your linked list and it  also doesn't require any parameter.
+Delete_by_index(size_t Pos);   : It is used to delete the element at specific position and it takes the position as parameter.
+
+eg. :
+
+```cpp
+void main()
+{
+    LinkedList<int> X;
+    X.Insert_start(10);//It is inserted at 0th index/start
+    X.Insert_end(20); //It is inserted at 1th index/end
+    X.Insert_at_index(30,1);  //It is inserted at 1th index and now end = 2
+    
+    ..........your code............
+        
+    X.Delete_by_index(1); //30 is deleted
+    X.Delete_end(); //20 is deleted
+    X.Delete_start(); //10 is deleted 
+}
 ```
 
 
