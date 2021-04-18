@@ -358,7 +358,9 @@ Well inserting an elment in linked list require lots of coding and frustrating t
 So now  you can do it by just calling  function ....
 
 Insert_start(T object)       :Inserting element at the start of linked list and takes element as parameter.
+
 Insert_end(T object)         :Inserting element at the end of linked list and takes element as parameter.
+
 Insert_at_index(T object,size_t Position) :Inserting element at the specific position in linked list index start from '0' and takes element ,index/position as parameters.
 
 eg:
@@ -382,9 +384,13 @@ void main()
 #### Deletion :
 
 As you know for deleting a element requires chunk of code and So here we make deleting as easy as inserting . so you  can focus  on your work not in the deleting of element.
+
 Here we go......
+
  Delete_start();                                 :  It is used to delete the starting element by just calling it and also  not require any parameter.
+
 Delete_end();                                    : It is used to delete the last element of your linked list and it  also doesn't require any parameter.
+
 Delete_by_index(size_t Pos);   : It is used to delete the element at specific position and it takes the position as parameter.
 
 eg. :
