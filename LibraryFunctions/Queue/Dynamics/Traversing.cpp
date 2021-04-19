@@ -5,9 +5,8 @@
     void Queue<T>::goto_start()
     {
         if(is__empty())
-        {
-            exit(500);
-        }
+            return;
+        
 
         self.Current_Data = &self.start->obj;
         Current_Data = &(*self.Current_Data);
@@ -21,7 +20,7 @@
         if(self.Current_Data == &(self.end->obj))
         {
               std::cout<<"\n Queue has reached the End. \n";
-              exit(500);
+              return;
         }
 
         self.Traverse_Next();
