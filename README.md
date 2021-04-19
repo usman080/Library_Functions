@@ -411,6 +411,94 @@ void main()
 }
 ```
 
+#### Traversing :
 
+As we know whenever there is Linked List then its most important part is comes that is Traversing .
+
+We have created very simple and easier traversing for the linked list. you can easily traverse through linked list using following functions...
+
+Traverse_from_start();   :It will set the current pointer to point towards start node.
+
+Traverse_from_end();     : It will set  the current pointer to point towards end node.
+
+Traverse_Next();                 : It will set the current pointer to point towards next node.
+
+Traverse_Prev();                  : It will set the current pointer to point towards previous node.
+
+eg :
+
+```cpp
+void main()
+{
+    LinkedList<int> X ;
+    X.Insert_start(10);
+    X.Insert_end(20);
+    X.Insert_at_index(30,1);
+    
+}
+```
+
+
+
+
+
+#### Cleaning of Linked List :
+
+Hey you know   you can remove your whole linked list  by just calling clean() function after your work .
+
+clean();   :    Used to clean whole linked list.
+
+```cpp
+void main()
+{
+    LinkedList<int>  X;
+    ............your code.......
+        .....
+        clean();// whole linkedlist is clean 
+}
+```
+
+ 
+
+
+
+#### Copying  Linked List into Another Linked List:
+
+Hey  we have some  surprise for you . As you know you can copy array using = operator into
+another array. But now you can copy linked list into another linked list same as array by just  using = (Assignment Operator). yeah yeah we know  you are shocked but it's truth .
+
+eg:
+
+```cpp
+void main()
+{
+    LinkedList<int> X , Y;
+    
+    ...............your code....................
+    
+    Y = X ;  // Contents of X linked list are copied in Y linked list
+}
+```
+
+
+
+
+
+####  Merging Of Two Linked List:
+
+Now merging of two linked list is so easy. you just have to use +=(Assignment Operator)
+ with only one line code you can merge two linked list and it will be stored in first linked list .
+So here we have example how to use the operator...
+
+```cpp
+void main()
+{
+    LinkedList<int> X , Y ;
+    
+    ...............your code.........
+    
+    X += Y;      // It will merge both linked list and store in X
+}
+```
 
 The Page is Still Under Construction 🚧👷‍♂️👷‍♀️🏗 but till that time, You can have a look at the Code 🖐.
