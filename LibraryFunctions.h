@@ -1,8 +1,10 @@
+#pragma once
 #include"LibraryFunctions/ForwardDeclarations.h" //Resolve for cyclic Dependencies.
 // Primes
 
 #include"LibraryFunctions/Array/Array.h"
 #include"LibraryFunctions/LinkedList/LinkedList.h"
+#include"LibraryFunctions/Queue/Queue.h"
 
 // Bridges
 #include"LibraryFunctions/Bridge.cpp"

@@ -1,22 +1,32 @@
 #pragma once
+#include"../../LibraryFunctions.h"
 
-template < class T>
+
+template<class T>
 class Queue
 {
-
-public:
-
+    public:
     LinkedList<T> self;
 
-    T* Current_Data;
+    T *CurrentData;
 
-    bool is__empty();
+    //Pushers
+    void push(T obj);
+    void push_rear(T obj);
+
+    //Getters
+    T front();
+    T back_rear();
+    T get(int i);
+
+
+    void pop();
+
+    void pop_back();
+
     void Clean();
-    
-    void Enqueue(T object);
-    void Dequeue();
-   
-    void goto_start();
-    void get_next();
+
+    bool is_empty();
+
 
 };

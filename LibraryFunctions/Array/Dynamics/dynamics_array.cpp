@@ -119,15 +119,15 @@ T& Array<T>::operator[](int i)
     return self[i];
 }
 
-template<class T>
-void Array<T>::operator = (Array &Y)
-{
-    size = Y.size;
-    for (int i = 0; i <size ; ++i)
-    {
-        self[i] = Y.self[i];
-    }
-}
+//template<class T>
+//void Array<T>::operator = (Array &Y)
+//{
+//    size = Y.size;
+//    for (int i = 0; i <size ; ++i)
+//    {
+//        self[i] = Y.self[i];
+//    }
+//}
 
 template<class T>
 void Array<T>::operator += (Array &Y)

@@ -22,7 +22,6 @@ void LinkedList<T>::Insert_end(T object)
         end->next = newp;
         end = newp;
     }
-    current = nullptr;
 }
 
 template <class T>

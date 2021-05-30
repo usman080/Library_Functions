@@ -76,7 +76,7 @@ class Array
      
     */
     T &operator[](int i);
-    void operator = (Array &Y);
+//    void operator = (Array &Y);
     void operator += (Array &Y);
 
     void operator = (LinkedList<T> &Y);

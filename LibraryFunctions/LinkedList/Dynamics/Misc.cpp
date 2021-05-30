@@ -43,3 +43,4 @@ void LinkedList<T>::operator=(LinkedList &Y)
     Y.current =  nullptr;
     
 }
+

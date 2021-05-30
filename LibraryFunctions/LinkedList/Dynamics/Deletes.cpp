@@ -10,15 +10,6 @@ void LinkedList<T>::Delete_start()
         exit(501);
 
     }
-    else if(start == end)
-    {
-        Node *temp;
-        temp = end;
-        start = nullptr;
-        end = nullptr;
-        current = nullptr;
-        free(temp);
-    }
     else
     {
         Node * newp;
@@ -81,15 +72,6 @@ void LinkedList<T>::Delete_end()
         exit(501);
 
     }
-    else if(start == end)
-    {
-        Node *temp;
-        temp = end;
-        start = nullptr;
-        end = nullptr;
-        current = nullptr;
-        free(temp);
-    }
     else
     {
         Node * temp;
@@ -97,6 +79,5 @@ void LinkedList<T>::Delete_end()
         end = end->prev;
         end->next = nullptr;
         free(temp);
-        current = nullptr;
     }
 }

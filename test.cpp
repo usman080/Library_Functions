@@ -1,31 +1,29 @@
-#include "LibraryFunctions.h"
+//Test for Queue
 
-class Test
+#include<iostream>
+#include"LibraryFunctions.h"
+
+using namespace std;
+class test
 {
-    public:
+public:
     int x;
 };
-
 int main()
 {
-    LinkedList<Test> A;
-    Array<Test> X(10);  // Array of size 10
+    test t;t.x=100;
+    Queue<int> a;
+    Queue<test> happy;
+    happy.push(t);
+    a.push(1);
+    a.push(2);
 
-    // Filling the Array from 0 to 10
-    for (int i = 0; i < X.size; i++)
-    {
-        X[i].x = i;
-    }
+    cout<<" Test Get by  function : "<<happy.get(0).x<<endl;
+    cout<<" Get by  function : "<<a.self.get_by_index(0);
 
-    A = X;  // Copied the Array to LinkedList
-    while (A.current != A.end)  
-    {
-        A.Traverse_Next();  // Traversing Next Node
-        if( (*A.Current_Data).x == 5 )
-            (*A.Current_Data).x = 100;
-        cout<<"\n Data :"<< (*A.Current_Data).x; // Current_Data holds the address of current node.
-    }
-    
-    
+
+    cout<<"\n Data : "<<a.front();
+    a.pop();
+    cout<<"\n Data : "<<a.front();
     return 1;
 }

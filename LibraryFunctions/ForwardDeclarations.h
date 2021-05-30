@@ -4,3 +4,6 @@ class Array;
 
 template<class T>
 class LinkedList;
+
+template<class T>
+class Queue;
