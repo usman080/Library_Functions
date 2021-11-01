@@ -6,7 +6,7 @@
 #define LIBRARY_FUNCTIONS_DYNAMICS_H
 
 
-#include <LibraryFunctions/Queue/Core.h>
+#include "../Core.h"
 
 template<class T>
 void Queue<T>::push(T obj) {
