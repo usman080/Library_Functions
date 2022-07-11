@@ -11,19 +11,13 @@ public:
 };
 int main()
 {
-    test t;t.x=100;
-    Queue<int> a;
-    Queue<test> happy;
-    happy.push(t);
-    a.push(1);
-    a.push(2);
-
-    cout<<" Test Get by  function : "<<happy.get(0).x<<endl;
-    cout<<" Get by  function : "<<a.self.get_by_index(0);
+    Array<int> array(10);
+    for (int i = 0; i < array.size(); ++i)
+    {
+        array[i] = i+1;
+        cout<<array[i]<<' ';
+    }
 
 
-    cout<<"\n Data : "<<a.front();
-    a.pop();
-    cout<<"\n Data : "<<a.front();
     return 1;
 }

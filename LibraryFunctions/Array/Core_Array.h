@@ -1,7 +1,7 @@
 #include<iostream>
-#include<stdlib.h>
+#include<cstdlib>
 #include<bits/stdc++.h>
-
+#pragma once
 using namespace std;
 
 /*
@@ -11,16 +11,16 @@ using namespace std;
 
  Constructors : 
  Array()  :  It is a Idle Constructor. //Planned for future use
- Array(s) : Takes Parameter of size and Creates the Array
+ Array(s) : Takes Parameter of _size and Creates the Array
 
  Functions  : 
- Create(s) : Takes size as parameter and Creates the array 
+ Create(s) : Takes _size as parameter and Creates the array
 
  Sort()         : Sorts the Array in default of Ascending Format
  Sort_Ascend()  : Sorts the Array Ascending Format
  Sort_Descend() : Sorts the Array Descending Format
 
- Print() : Prints the Array till its size 
+ Print() : Prints the Array till its _size
 
  Resize(re_size) : Resize function takes re_size as parameter so you can Expand  or Compress the Array 
     
@@ -42,42 +42,30 @@ using namespace std;
 
 template<class T>
 class Array
-{
-    public:
-    
-    T *self = nullptr; //if your compiler gives error : ‘nullptr’ was not declared in this scopedd, Visit Code Guidlines Provided at Repository
-    size_t size = 0;
 
+{
+private:
+    T *self = nullptr; //if your compiler gives error : ‘nullptr’ was not declared in this scoped, Visit Code Guidelines Provided at Repository
+    void Create(size_t s);
+    size_t _size = 0;
+
+public:
     //Constructors
     Array();
-    Array(size_t s);
-
+    explicit Array(size_t s);
     //Destructor
     ~Array();
+    //Functions
+    size_t size();
 
-    //Functions 
-    void Create(size_t s);
-    // void Destroy();
     void Clean();
-
-    void Sort();
-    void Sort_Ascend();
-    void Sort_Descend();
-
     void Print();
-
     void Resize(size_t re_size);
-
     void validate();
 
-    void delete_current_shift_left(size_t location);
+    void delete_at_index(size_t location);
     //Operator Overloading
-    /*
-     
-    */
     T &operator[](int i);
-//    void operator = (Array &Y);
     void operator += (Array &Y);
-
     void operator = (LinkedList<T> &Y);
 };

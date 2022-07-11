@@ -37,28 +37,15 @@ void main()
 }
 ```
 
-*OR*
 
-```c++
-//Create(s) : Takes size as parameter and Creates the Dynamic Array 
-void main()
-{
-    Array<int> X;
-    X.Create(5)
-}
-```
-
-
-
-> ⚠ **Pass size of an array as "unsigned long long int" *strictly***;
 >
 > eg
 >
 > ```c++
 > void main()
 > {
-> 	unsigned long long int size = 100;
->     Array<int> X(size);
+> 	unsigned long long int _size = 100;
+>     Array<int> X(_size);
 > }
 > ```
 
@@ -66,17 +53,17 @@ void main()
 
 > Are this Arrays Dynamic ? 
 >
-> Ans : Obviously!, They are Dynamic.
+> Ans : Obviously!, They are Dynamic and are stored on Heap.
 >
 > eg:
 >
 > ```c++
 > void main()
 > {
-> 	unsigned long long int size;
+> 	unsigned long long int _size;
 >     std::cout<<"Enter the Size of the Array : ";
->     std::cin>>size;
->     Array<int> X(size);
+>     std::cin>>_size;
+>     Array<int> X(_size);
 > }
 > ```
 >
@@ -84,141 +71,29 @@ void main()
 
 
 
-> Sorry, but you can't initialize a array using brace-enclosed  initializer list.
->
-> eg:  X = {1,2,3,4};
-
 
 
 #### Accessing the Array:
 
-There are two ways of Accesing the Array:
 
 ```c++
 void main()
 {
-    unsigned long long int size = 3;
-    Array<int> X(size);
+    unsigned long long int _size = 3;
+    Array<int> X(_size);
     X[0] = 1;
     X[1] = 2;
     X[2] = 3;
     
-    for(int i=0;i<X.size;i++)
+    for(int i=0;i<X._size;i++)
         std::cout<<endl<<X[i];
 }
 ```
 
-OR
-
-```c++
-void main()
-{
-    unsigned long long int size = 3;
-    Array<int> X(size);
-    X.self[0] = 1;
-    X.self[1] = 2;
-    X.self[2] = 3;
-    
-    for(int i=0;i<X.size;i++)
-        std::cout<<endl<<X.self[i];
-}
-```
 
 
 
-> We know you may be thinking why use X.self[] if we can access it by X[] ?
->
-> Ans : **We have overloaded the [] operator so you don't have to always type .self** 
->
-> ​			but it creates a problem when you're passing to a external function when it accepts int* or any specific datatype* 
->
-> ​			as arguments, because **X is an Object and Not a Array in it self**.
->
-> ​			*But we have got a solution :)*
->
-> ​			**You can pass X.self and not worry about it.**
 
-
-
-#### Printing the Array:
-
-  *Print() : Prints the Array till its size* 
-
-```c++
-void main()
-{
-	unsigned long long int size;
-    //Taking Input of the Array;
-    std::cout<<"Enter the Size of the Array : ";
-    std::cin>>size;
-    //Initializing the Array
-    Array<int> X(size);
-	
-    //Assigning some values to the Array;
-    for(int i=0;i<X.size;i++)
-        X[i]=i;
-    
-    //Prints the whole array of its size;
-    X.Print();
-}
-/*
-Output:
-
-    Enter the Size of the Array : 5
-
-    0 1 2 3 4 
-
-*/
-```
-
-
-
-#### Sorting Array:
-
- Sort()  			       : Sorts the Array in default of Ascending Format
-
- Sort_Ascend()   : Sorts the Array Ascending Format
-
- Sort_Descend() : Sorts the Array Descending Format
-
-*Default Sorting : Ascending Sort*
-
-```c++
-void main()
-{
-    Array<int> X(10);
-    ......
-        your code.........
-        
-	X.Sort(); //Sorts the Array in Ascending Order
-}
-```
-
-OR
-
-```c++
-void main()
-{
-    Array<int> X(10);
-    ......
-        your code.........
-        
-	X.Sort_Ascend(); //Sorts the Array in Ascending Order
-}
-```
-
-*Descending Order Sort :*
-
-```c++
-void main()
-{
-    Array<int> X(10);
-    ......
-        your code.........
-        
-	X.Sort_Descend(); //Sorts the Array in Descending Order
-}
-```
 
 
 
@@ -275,7 +150,7 @@ void main()
 
 #### Merging Two Arrays:
 
-Merging is more simpler and you don't have to even worry about the size of array too.
+Merging is more simpler and you don't have to even worry about the _size of array too.
 
 And it gets even Magical when you just use += (Assignment Operator) 😉
 
@@ -312,10 +187,10 @@ class Test
 int main()
 {
     LinkedList<Test> A;
-    Array<Test> X(10);  // Array of size 10
+    Array<Test> X(10);  // Array of _size 10
 
     // Filling the Array from 0 to 10
-    for (int i = 0; i < X.size; i++)
+    for (int i = 0; i < X._size; i++)
     {
         X[i].x = i;
     }
