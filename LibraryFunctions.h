@@ -1,13 +1,12 @@
-#pragma once
-#include"LibraryFunctions/ForwardDeclarations.h" //Resolve for cyclic Dependencies.
-// Primes
+//
+// Created by Onkar Ingale on 28-12-2022.
+//
 
-#include"LibraryFunctions/Array/Array.h"
-#include"LibraryFunctions/LinkedList/LinkedList.h"
-#include"LibraryFunctions/Queue/Queue.h"
+#ifndef NEW_LIBRARY_FUNCTION_LIBRARYFUNCTIONS_H
+#define NEW_LIBRARY_FUNCTION_LIBRARYFUNCTIONS_H
 
-// Bridges
-#include"LibraryFunctions/Bridge.cpp"
-
-//Clocks for Unit Testing 
-// #include"LibraryFunctions/Clock/Clock.h" // Disabled By Default
+#include "Array/Array.h"
+#include "LinkedList/LinkedList.h"
+#include "Stack/Stack.h"
+#include "Tree/Tree.h"
+#endif //NEW_LIBRARY_FUNCTION_LIBRARYFUNCTIONS_H

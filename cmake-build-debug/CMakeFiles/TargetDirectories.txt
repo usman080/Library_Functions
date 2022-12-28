@@ -1,3 +1,3 @@
-C:/Users/Onkar Ingale/Desktop/Drills/Sync_Github/Library_Functions/cmake-build-debug/CMakeFiles/Library_Functions.dir
-C:/Users/Onkar Ingale/Desktop/Drills/Sync_Github/Library_Functions/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Onkar Ingale/Desktop/Drills/Sync_Github/Library_Functions/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/ingal/OneDrive/Desktop/Github/Sync/New Library Function/cmake-build-debug/CMakeFiles/New_Library_Function.dir
+C:/Users/ingal/OneDrive/Desktop/Github/Sync/New Library Function/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ingal/OneDrive/Desktop/Github/Sync/New Library Function/cmake-build-debug/CMakeFiles/rebuild_cache.dir
