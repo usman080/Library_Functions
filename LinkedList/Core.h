@@ -200,12 +200,18 @@ void LinkedList<T>::deleteStart() {
 
 
     } else {
-        Node *newp;
-        newp = start;
-        start = start->next;
-        start->prev = nullptr;
-        Update_index_after_deleting(newp);
-        free(newp);
+       Node *temp;
+        temp = start;
+        if (start==end)
+        {
+            start = end = nullptr;
+        } else
+        {
+            start = start->next;
+            start->prev = nullptr;
+        }
+        Update_index_after_deleting(temp);
+        free(temp);
     }
 }
 
