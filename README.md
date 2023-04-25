@@ -22,7 +22,7 @@
 
    
 
-###  Array :
+###  Dynamic Array :
 
 
 
