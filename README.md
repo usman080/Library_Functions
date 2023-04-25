@@ -39,10 +39,6 @@ void main()
 
 
 
-> Are this Arrays Dynamic ? 
->
-> Ans : Obviously!, They are Dynamic.
->
 > eg:
 >
 > ```c++
